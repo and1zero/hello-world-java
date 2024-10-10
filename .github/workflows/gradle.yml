@@ -9,9 +9,15 @@ name: Java CI with Gradle
 
 on:
   push:
-    branches: [ $default-branch ]
+    branches:
+      - main
+      - develop
+      - release/*
   pull_request:
-    branches: [ $default-branch ]
+    branches:
+      - main
+      - develop
+      - release/*
 
 jobs:
   build:
